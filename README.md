@@ -28,4 +28,5 @@
     `curl http://localhost:45001/api/v0/swarm/peers`
 
 * ipfs gateway example: 
+    
     `curl http://localhost:48080/ipns/QmRWuyGyWT56oLxXPCmmbCvZFYnnU5P8uQgKxx4qhMoQ67`
