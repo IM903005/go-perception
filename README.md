@@ -33,11 +33,18 @@
 
 ## API
 
-* Get agent-server table by peer, used to check if agent-server has been found.
+### getastab
+
+> Get agent-server table by peer, used to check if agent-server has been found.
 
 request:
-    `http://localhost:40080/api/?body={"sn":"sn-101","service":"funcs","method":"getastab"}`
+
+```
+http://localhost:40080/api/?body={"sn":"sn-101","service":"funcs","method":"getastab"}
+```
+
 response:
+
 ```
 {
   "sn": "sn-101",
