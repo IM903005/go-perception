@@ -35,7 +35,7 @@
 
 ### getastab
 
-__Get agent-server table by peer, used to check if agent-server has been found.__
+__Get agent-server table , used to check if agent-server has been found.__
 
 * request:
 
