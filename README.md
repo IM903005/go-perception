@@ -30,3 +30,32 @@
 * ipfs gateway example: 
     
     `curl http://localhost:48080/ipns/QmRWuyGyWT56oLxXPCmmbCvZFYnnU5P8uQgKxx4qhMoQ67`
+
+## API
+
+* Get agent-server table by peer, used to check if agent-server has been found.
+
+request:
+    `http://localhost:40080/api/?body={"sn":"sn-101","service":"funcs","method":"getastab"}`
+response:
+```
+{
+  "sn": "sn-101",
+  "success": true,
+  "entity": {
+    "/agent/ipfsapi": [
+      "Qmduz9PhkP53UiTYUuNgp6JbWj69DWdbT9vWmw3BoH2sw3"
+    ],
+    "/agent/ipfsgateway": [
+      "Qmduz9PhkP53UiTYUuNgp6JbWj69DWdbT9vWmw3BoH2sw3"
+    ],
+    "/agent/web3rpc": [
+      "Qmduz9PhkP53UiTYUuNgp6JbWj69DWdbT9vWmw3BoH2sw3"
+    ],
+    "/agent/web3ws": [
+      "Qmduz9PhkP53UiTYUuNgp6JbWj69DWdbT9vWmw3BoH2sw3"
+    ]
+  }
+}
+```
+  
